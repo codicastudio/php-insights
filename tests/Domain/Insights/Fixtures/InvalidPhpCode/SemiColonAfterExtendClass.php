@@ -1,2 +1,2 @@
 <?php
-class MyClass extends Illuminate\Database\Eloquent\Model; {}
+// class MyClass extends Illuminate\Database\Eloquent\Model; {}
