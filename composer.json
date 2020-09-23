@@ -1,10 +1,10 @@
 {
-    "name": "codicastudio/phpinsights",
+    "name": "codica-studio/phpinsights",
     "description": "A random Codica Studio package.",
     "keywords": [
         ""
     ],
-    "homepage": "https://github.com/codicastudio/phpinsights",
+    "homepage": "https://github.com/codica-studio/phpinsights",
     "license": "MIT",
     "authors": [
         {
