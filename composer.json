@@ -1,8 +1,8 @@
 {
-    "name": "codica-studio/phpinsights",
+    "name": "codicastudio/php-insights",
     "description": "A random Codica Studio package.",
 
-    "homepage": "https://github.com/codicastudio/phpinsights",
+    "homepage": "https://github.com/codicastudio/php-insights",
     "license": "MIT",
     "authors": [
         {
@@ -35,16 +35,11 @@
         "symfony/finder": "^4.2|^5.0"
     },
     "require-dev": {
-        "ergebnis/phpstan-rules": "^0.14.0",
         "illuminate/console": "^7.0",
         "illuminate/support": "^7.0",
-        "mockery/mockery": "^1.0",
-        "phpstan/phpstan-strict-rules": "^0.12",
-        "phpunit/phpunit": "^8.0|^9.0",
-        "rector/rector": "^0.7.11",
-        "symfony/var-dumper": "^4.2|^5.0",
-        "symplify/easy-coding-standard": "^7.2.3",
-        "thecodingmachine/phpstan-strict-rules": "^0.12.0"
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^4.2|^5.0"
     },
     "suggest": {
         "ext-simplexml": "It is needed for the checkstyle formatter"
@@ -91,8 +86,7 @@
         ],
         "fix": [
             "@ecs:test --fix",
-            "@insights --fix --quiet",
-            "@rector:test"
+            "@insights --fix --quiet"
         ],
         "post-install-cmd": [
             "@website:copy-changelog",
@@ -106,8 +100,6 @@
     "scripts-descriptions": {
         "website:copy-changelog": "Copy package changelog to the website",
         "website:copy-logo": "Copy logo from art directory to the website",
-        "ecs:test": "Run the ecs tests.",
-        "rector:test": "Run the rector tests.",
         "phpstan:test": "Run the phpstan tests.",
         "phpunit:test": "Run the phpunit tests.",
         "insights": "Run the phpinsights tests",
